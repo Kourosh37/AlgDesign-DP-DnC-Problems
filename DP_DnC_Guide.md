@@ -8,6 +8,53 @@ This guide provides detailed explanations and **line-by-line commented solutions
 
 ---
 
+## 🚀 Introduction to Dynamic Programming and Divide & Conquer
+
+Before diving into problems, let’s understand what these powerful techniques are and **how** and **when** to use them.
+
+---
+
+### 🧠 What is Dynamic Programming (DP)?
+
+Dynamic Programming is a method for solving complex problems by breaking them down into **simpler subproblems** and **storing their results** to avoid redundant computations.
+
+#### ✅ Key Features:
+- **Overlapping Subproblems**: The problem can be broken into subproblems that are solved repeatedly.
+- **Optimal Substructure**: The solution to the big problem can be built from optimal solutions of subproblems.
+- **Memoization (Top-down)** or **Tabulation (Bottom-up)** strategies are used.
+
+#### 🛠️ How to Solve Problems with DP:
+1. **Define State**: Decide what parameters define a subproblem (for example `dp[i]` = best solution for size `i`).
+2. **Write Recurrence Relation**: Find how a problem relates to smaller subproblems.
+3. **Set Base Case(s)**: Define trivial solutions.
+4. **Choose Approach**: Top-down with recursion + memoization, or bottom-up with iteration.
+5. **Implement and Optimize**: Use arrays/tables to store results and improve space/time.
+
+> **Example**: In the Knapsack problem, we try either **including or excluding** each item and **store** the best values for each capacity.
+
+---
+
+### 🔀 What is Divide and Conquer (D&C)?
+
+Divide and Conquer solves problems by:
+- **Dividing** the problem into smaller independent subproblems.
+- **Solving** them recursively.
+- **Combining** their results to form the final solution.
+
+#### ✅ Key Features:
+- Problems are broken into **non-overlapping** parts.
+- Useful for **sorting**, **searching**, **matrix operations**, etc.
+- Often leads to **recursive algorithms** with good time complexity.
+
+#### 🛠️ How to Solve Problems with D&C:
+1. **Divide**: Split the problem into equal (or manageable) parts.
+2. **Conquer**: Recursively solve the subproblems.
+3. **Combine**: Merge or process the results of subproblems to get the final result.
+
+> **Example**: In Merge Sort, we divide the array, sort each half, and then merge them back together.
+
+---
+
 ## 🧠 Dynamic Programming Problems
 
 ---
